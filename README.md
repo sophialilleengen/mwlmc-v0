@@ -10,6 +10,15 @@ This branch of sphexpansion provides interfaces a model Milky Way and Large Mage
 
 ### Installation notes
 
+Should be installable with
+```
+git clone --recursive https://github.com/sophialilleengen/mwlmc.git
+pip install -e ./mwlmc 
+```
+
+
+
+**Don't need this next paragraph**
 sphexpansion now uses `cmake` as the primary installation tool (to build the example applications). To use, create a directory `build`, then in that directory, `cmake ..; make` to create working examples in `build/examples`. For compiling with `pybind11` capability, you may want to use `cmake -DPYTHON_EXECUTABLE=$(python3 -c "import sys; print(sys.executable)") ..; make`.
 
 You may need to install `cmake`. Using homebrew, try `brew install cmake`. If using macports, the corresponding command is `sudo port install cmake`.
